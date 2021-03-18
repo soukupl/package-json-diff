@@ -1,0 +1,38 @@
+.wrap {
+  padding: 0;
+  margin: 0;
+}
+
+.topbar {
+  background-color: black;
+
+  h1 {
+    margin: 0;
+    padding: 0.3em 0.6em;
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+  }
+}
+
+.main {
+  margin: 2em 1em;
+  display: flex;
+  flex-direction: column;
+
+  .files {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .file {
+      border: 1px solid red;
+    }
+  }
+
+  .diff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,49 @@
+.fooo {
+  color: red;
+}
+
+.table {
+  width: auto;
+  border-spacing: 0;
+  border: 2px solid #000;
+
+  .head {
+    background-color: yellow;
+  }
+
+  .body {
+    background-color: antiquewhite;
+  }
+
+  tr {
+    background: #fff;
+
+    &:nth-child(odd) {
+      background: #ebebeb;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #000;
+    }
+
+    &:last-child {
+      th,
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  th {
+    font-weight: 700;
+    padding: 0.3em 1em;
+    text-align: left;
+  }
+
+  td {
+    margin: 0;
+    padding: 0.3em 1em;
+    text-align: center;
+  }
+}

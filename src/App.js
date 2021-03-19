@@ -2,8 +2,8 @@ import Styles from "./App.module.scss";
 import DiffTable from "./Components/DiffTable";
 
 const data = [
-  { package: "lorem ipsum", ver1: "^1.3.2", ver2: "2.1.1", ver: "" },
-  { package: "react", ver1: "^1.3.2", ver2: null, ver: "17.0.1" },
+  { package: "lorem ipsum", ver1: "1.3.2", ver2: "2.1.1", ver: "" },
+  { package: "react", ver1: "1.3.2", ver2: null, ver: "17.0.1" },
   { package: "react-deom", ver1: null, ver2: "2.1.1", ver: "" },
 ];
 
@@ -19,7 +19,7 @@ function App() {
           <div className={Styles.file}>file 2</div>
         </div>
         <div className={Styles.diff}>
-          <DiffTable data={data} />
+          <DiffTable title="dependencies" data={data} />
         </div>
       </section>
     </section>

@@ -2,6 +2,11 @@
   color: red;
 }
 
+.tableTitle {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .table {
   width: auto;
   border-spacing: 0;
@@ -45,5 +50,12 @@
     margin: 0;
     padding: 0.3em 1em;
     text-align: center;
+  }
+}
+
+.diffIcon {
+  svg {
+    width: 1em;
+    height: 1em;
   }
 }

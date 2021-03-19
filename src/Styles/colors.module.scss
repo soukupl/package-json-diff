@@ -4,6 +4,19 @@ $colors: (
   warning: yellow,
 );
 
-.ignore {
-  fill: #aaa;
+@import "colors.functinons.scss";
+
+@each $name, $color in $colors {
+  .icon-#{$name} {
+    fill: $color;
+  }
+
+  .#{$name} {
+    color: $color;
+  }
+
+  .bg-#{$name} {
+    background-color: $color;
+    color: choose-contrast-color($color);
+  }
 }

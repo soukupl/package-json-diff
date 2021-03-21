@@ -1,21 +1,21 @@
 $colors: (
-  success: green,
-  ignore: #aaa,
-  warning: yellow,
+  Success: green,
+  Ignore: #aaa,
+  Warning: yellow,
 );
 
 @import "colors.functinons.scss";
 
 @each $name, $color in $colors {
-  .icon-#{$name} {
+  .icon#{$name} {
     fill: $color;
   }
 
-  .#{$name} {
+  .text#{$name} {
     color: $color;
   }
 
-  .bg-#{$name} {
+  .bg#{$name} {
     background-color: $color;
     color: choose-contrast-color($color);
   }

@@ -8,22 +8,22 @@ import { ReactComponent as IconSame } from "../assets/check-circle.svg";
 import { ReactComponent as IconIgnore } from "../assets/minus-circle.svg";
 
 const VersionDiffIcon = ({ ver1, ver2 }) => {
-  if (!ver1 || !ver2) return <IconIgnore className={Styles.ignore} />;
+  if (!ver1 || !ver2) return <IconIgnore className={Styles.iconIgnore} />;
 
   const compare = compareVersions(ver1, ver2);
 
   switch (compare) {
     case 0:
-      return <IconSame className={Styles.success} />;
+      return <IconSame className={Styles.iconSuccess} />;
 
     case 1:
-      return <IconGreater className={Styles.warning} />;
+      return <IconGreater className={Styles.iconWarning} />;
 
     case -1:
-      return <IconLower className={Styles.success} />;
+      return <IconLower className={Styles.iconSuccess} />;
 
     default:
-      return <IconIgnore className={Styles.ignore} />;
+      return <IconIgnore className={Styles.iconIgnore} />;
   }
 };
 
